@@ -16,7 +16,7 @@ For more infomation:-
 )
 So a text editor which generates HTML content must be compatible with email supported Html tags. CKeditor provides a text editor in which the generated html is compatible with email clients. However, since some of the attributes are not mentioned in the generated html,  some embedded CSS would be required to make the content responsive (like body color, width of table, and max-width of image). This CSS needs to be made inline to appear properly on Gmail client. You can use [https://github.com/SLaks/Styliner](https://github.com/SLaks/Styliner) library to make the CSS inline.
 
-<img src="https://getdailyprogramming.github.io/images/ckeditor.jpg" width="400"/>
+<img src="../images/ckeditor.jpg" width="400"/>
 
 ### References
 https://ckeditor.com

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-29T14:01:32+05:30</updated><id>http://localhost:4000/</id><title type="html">Daily programming</title><subtitle>Get daily snippets on programming over here which would help you in software development.</subtitle><entry><title type="html">Jekyll and Github pages</title><link href="http://localhost:4000/2018/04/26/jekyll-and-github-pages.html" rel="alternate" type="text/html" title="Jekyll and Github pages" /><published>2018-04-26T22:08:10+05:30</published><updated>2018-04-26T22:08:10+05:30</updated><id>http://localhost:4000/2018/04/26/jekyll-and-github-pages</id><content type="html" xml:base="http://localhost:4000/2018/04/26/jekyll-and-github-pages.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;I want a very simple personal site on which I can blog too. It should not require maintenance and should not be costly to host.&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Use Jekyll with Github pages&lt;/p&gt;
+
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;p&gt;The site on which you are reading this post is hosted on Github pages with Jekyll as the static html generator. Jekyll is nothing but a ruby library which converts markdown posts into html content and fills it into the predefined site template. Github pages then allow you to host the content on their sever without any charges. (However getting your own domain name would incur some cost which is typically 600 Indian rupees per year). In case you are unfamiliar with markdown, it is a language which allows you to define text format by using easy pre-defines text characters. Benefit of it is that you don’t need to write html tags. Wiki software uses markdown to write posts.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h3&gt;
+&lt;p&gt;Head to &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; and download the node js package and follow the instructions to create a sample project. After becoming comfortable with it, you can create a GitHub account with the name of your personal site. Create an empty repo and dump the project you created with Jekyll. Make sure to run “Jekyll build” to build static web pages.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;http://jekyllrb.com&lt;/a&gt;
+&lt;a href=&quot;http://jmcglone.com/guides/github-pages/&quot;&gt;http://jmcglone.com/guides/github-pages/&lt;/a&gt;
+&lt;a href=&quot;https://daringfireball.net/projects/&quot;&gt;https://daringfireball.net/projects/&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Problem I want a very simple personal site on which I can blog too. It should not require maintenance and should not be costly to host.</summary></entry><entry><title type="html">Git rebase</title><link href="http://localhost:4000/2018/04/25/git-rebase.html" rel="alternate" type="text/html" title="Git rebase" /><published>2018-04-25T22:08:10+05:30</published><updated>2018-04-25T22:08:10+05:30</updated><id>http://localhost:4000/2018/04/25/git-rebase</id><content type="html" xml:base="http://localhost:4000/2018/04/25/git-rebase.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;I am working on a development branch which I made from master branch. By the time I finished my work, master branch had already moved forward. Pulling the master branch in my own branch and then merging it with master distorts the git history by making it difficult to read the commits done for a feature.&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Use git rebase before creating a pull request.&lt;/p&gt;
+
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;p&gt;Suppose this is how the current development graph look like.
+You made a branch from master, wrote some code and by the time you complete the development, the master branch has proceeded forward. So, you will need to pull the master code into your branch to raise the CR. However, this would interlink your commits with the commits made in master branch according to timestamp. Hence, developers in your team wouldn’t be able to isolate your commits in the git history easily for following the changes made for a particular feature. Here in comes the use of rebase, which pulls in the commits of master branch and then applies any additional commits which you have made since the last commit from where the two branches diverged. The following diagram might give you some more context and when in doubt, google.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://getdailyprogramming.github.io/images/2018-04-25-screenshot1.png&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h3&gt;
+&lt;p&gt;Get in the habit of rebasing on your feature branch in which you are working before raising a pull request&lt;/p&gt;</content><author><name></name></author><summary type="html">Problem I am working on a development branch which I made from master branch. By the time I finished my work, master branch had already moved forward. Pulling the master branch in my own branch and then merging it with master distorts the git history by making it difficult to read the commits done for a feature.</summary></entry><entry><title type="html">Tracking pixel</title><link href="http://localhost:4000/2018/04/24/tracking-pixel.html" rel="alternate" type="text/html" title="Tracking pixel" /><published>2018-04-24T22:08:10+05:30</published><updated>2018-04-24T22:08:10+05:30</updated><id>http://localhost:4000/2018/04/24/tracking-pixel</id><content type="html" xml:base="http://localhost:4000/2018/04/24/tracking-pixel.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;I send mails frequently, however I want to track how many people actually open them and which kind of mails perform better..&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Use tracking pixel in an image&lt;/p&gt;
+
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;p&gt;Tracking pixel is an image which is embedded inside an email. When the user opens an email, a request is made to download the image from the server. The request also includes other data to identify user action like cookie Id. The code on the browser then attributes the click to that particular user.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h3&gt;
+&lt;p&gt;You need to add a font file to your app to use the font-icons. You can head to &lt;a href=&quot;http://fontastic.me/&quot;&gt;fontastic.me&lt;/a&gt; or &lt;a href=&quot;https://fontawesome.com/&quot;&gt;fontawesome&lt;/a&gt; to download a font-file. Add it to your app as a resource and then use it as a font family for a text field in your app. Play around with it by changing the character, size and its color. Now instead of 100s of images, you would have a single file with its size in KBs.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.quora.com/How-does-a-tracking-pixel-work&quot;&gt;https://www.quora.com/How-does-a-tracking-pixel-work&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Problem I send mails frequently, however I want to track how many people actually open them and which kind of mails perform better..</summary></entry><entry><title type="html">Font icons</title><link href="http://localhost:4000/2018/04/23/font-icons.html" rel="alternate" type="text/html" title="Font icons" /><published>2018-04-23T22:08:10+05:30</published><updated>2018-04-23T22:08:10+05:30</updated><id>http://localhost:4000/2018/04/23/font-icons</id><content type="html" xml:base="http://localhost:4000/2018/04/23/font-icons.html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;The images which I use in my app for navigation icons and buttons is increasing the size of my app. It decreases the chances my app being downloaded on low memory devices and requires longer install times.&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Use font-icons instead of images in your app.&lt;/p&gt;
+
+&lt;h3 id=&quot;explanation&quot;&gt;Explanation&lt;/h3&gt;
+&lt;p&gt;Many icons which you see in the apps are actually font-icons and not images. Font icons are nothing but characters , except they are in custom designed font-family unlike the font-family which we are used to seeing (like Ariel, Times New Roman etc).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://getdailyprogramming.github.io/images/2018-04-23-screenshot1.png&quot; width=&quot;200&quot; /&gt;&lt;img src=&quot;https://getdailyprogramming.github.io/images/2018-04-23-screenshot2.png&quot; width=&quot;200&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The icons which you see in the above screenshots from Google Maps are all font icons. By the way, font-icons can be used on web also.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h3&gt;
+&lt;p&gt;You need to add a font file to your app to use the font-icons. You can head to &lt;a href=&quot;http://fontastic.me/&quot;&gt;fontastic.me&lt;/a&gt; or &lt;a href=&quot;https://fontawesome.com/&quot;&gt;fontawesome&lt;/a&gt; to download a font-file. Add it to your app as a resource and then use it as a font family for a text field in your app. Play around with it by changing the character, size and its color. Now instead of 100s of images, you would have a single file with its size in KBs.&lt;/p&gt;</content><author><name></name></author><summary type="html">Problem The images which I use in my app for navigation icons and buttons is increasing the size of my app. It decreases the chances my app being downloaded on low memory devices and requires longer install times.</summary></entry></feed>

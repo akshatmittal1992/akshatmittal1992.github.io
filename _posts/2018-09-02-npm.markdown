@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "React"
+date:   2018-04-25 22:08:10 +0530
+---
+### Problem
+Writing a large front end code in javascript is not an easy task. With increasing complexity, a change in a particular value inside the DOM forces the refresh of whole page instead of only the required DOM elements leading to slower performance. Identifying which elements need to change with respect to a change in one element also becomes difficult. To solve the above problems, react framework is used. In simple words, react is a way to implement  Object Oriented programming for Javascript. 

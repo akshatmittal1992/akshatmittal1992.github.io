@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "CKeditor"
+date:   2018-04-27 22:08:10 +0530
+---
+### Problem
+I need an Html editor which I can use to create html content which is compatible with email clients.
+
+### Solution
+Use CKeditor
+
+### Explanation
+Html content for email is significantly different from Html content for a web page because of limitations of different web clients both because of security reasons and slow pace of development. Example:- Only inline CSS is supported. Divs are not supported etc.
+For more infomation:-
+[https://templates.mailchimp.com/getting-started/html-email-basics/](https://templates.mailchimp.com/getting-started/html-email-basics/
+)
+So a text editor which generates HTML content must be compatible with email supported Html tags. CKeditor provides a text editor in which the generated html is compatible with email clients. However, since some of the attributes are not mentioned in the generated html,  some embedded CSS would be required to make the content responsive (like body color, width of table, and max-width of image). This CSS needs to be made inline to appear properly on Gmail client. You can use [https://github.com/SLaks/Styliner](https://github.com/SLaks/Styliner) library to make the CSS inline.
+
+<img src="https://getdailyprogramming.github.io/images/ckeditor.jpg" width="400"/>
+
+### References
+https://ckeditor.com
+https://litmus.com/blog/the-2017-email-client-market-share-infographic
+https://github.com/SLaks/Styliner
+https://litmus.com/blog/understanding-gmail-and-css-part-1
+https://templates.mailchimp.com/getting-started/html-email-basics/
+https://templates.mailchimp.com/resources/inline-css/
+https://aws.amazon.com/getting-started/tutorials/send-an-email/
+

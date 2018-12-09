@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Developed by Akshat Mittal
+`	Notes:-
+	Created it just to have a simple game for increasing memorization and focus.
+	Kakegurui anime gave rise to this idea for a game.
+	Could have used jquery to reduce the code a bit.
+	React might have been a better choice for a more complex game.
+	 -->
+	<title>Pairs</title>
+	<script type="text/javascript" src="./solitaire_logic.js"></script>
+	<style type="text/css">
+		.unopened_card {
+		    border:1px solid #ccc;
+		    border-radius: 2px;
+		    background: #fff;
+		    color:#444;
+		    width: 60px;
+		    height:100px;
+		    margin: 10px;
+		    visibility: visible;
+		}
+		.card {
+		    border:1px solid #ccc;
+		    border-radius: 2px;
+		    background: #fff;
+		    color:#444;
+		    width: 80px;
+		    height:120px;
+		    margin: 10px;
+		    display: inline-block;
+		    visibility: visible;
+		    vertical-align: top;
+		}
+		.matched {
+			visibility: hidden;
+		}
+		.red {
+			color: red;
+		}
+		.black {
+			color: #444;
+		}
+		.top, .bottom{
+		    font-size:16px;
+		    padding: 4px;
+		}
+		.bottom{
+		    float: right;
+		}
+		.number, .icon{
+		    display: block;
+		}
+		.rotate{
+		    transform: rotate(180deg);
+		     -ms-transform: rotate(180deg); /* IE 9 */
+		    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+		}
+		.lg_icon{
+		    font-size: 28px;
+		    text-align: center;
+		    display: block;
+		}
+	</style>
+<body>
+	<div id="welcome_screen">
+		<h1>Pairs</h1>
+
+		<p>Rules:- Pick a pair of cards. If the pair is of the same rank (number) and same color (either red or black) then you win that pair, else they are again put face down. Play again till you all the pairs have been picked up. Objective is to reduce the amount of flips needed to find all the pairs in as little time as possible. The fun part of the game is memorization and focus, so don't make a note of the position of cards apart from your memory.</p>
+
+	<div>
+
+	<div id='game_table'></div>
+
+	<br /><div id="score_card_display"></div>
+
+	<div id="game_over"></div>
+
+	<div id="restart_game" onclick="initializeStackOfCards()" style="display: none;text-decoration: underline;">Restart game</div>
+
+	<script type="text/javascript">
+		initializeStackOfCards();
+	</script>
+
+</body>
+</html>
